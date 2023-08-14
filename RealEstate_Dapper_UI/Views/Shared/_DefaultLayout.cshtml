@@ -6,25 +6,21 @@
 <!doctype html>
 <html lang="en">
 @await Component.InvokeAsync("_HeaderViewComponentPartial")
-  <body>
-
+<body>
 
     @await Component.InvokeAsync("_NavbarViewComponentPartial")
 
-
-<section class="w3l-about-breadcrumb">
-    <div class="breadcrumb-bg breadcrumb-bg-about pt-5">
-        <div class="container pt-lg-5 py-3">
+    <section class="w3l-about-breadcrumb">
+        <div class="breadcrumb-bg breadcrumb-bg-about pt-5">
+            <div class="container pt-lg-5 py-3">
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
-@RenderBody()
+    @RenderBody()
 
     @await Component.InvokeAsync("_FooterViewComponentPartial")
     @await Component.InvokeAsync("_ScriptsViewComponentPartial")
-    
 
 </body>
 
